@@ -23,7 +23,7 @@ SPEED=1.3
 for KW in エラー error Error 失敗 failed fail exception Exception 警告 warning Warning; do
   if echo "${SPEAK_TEXT}" | grep -q "${KW}"; then
     SPEAKER=38
-    SPEED=1.0
+    SPEED=1.2
     break
   fi
 done

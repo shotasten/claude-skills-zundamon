@@ -9,7 +9,7 @@ description: ずんだもんに読み上げさせる
 - **通常モード**：作業完了・お知らせ・中立的な内容
   - SPEAKER=3（ノーマル）、speedScale=1.3
 - **ネガティブモード**：エラー・失敗・警告・ネガティブな内容
-  - SPEAKER=38（ヒソヒソ）、speedScale=1.0
+  - SPEAKER=38（ヒソヒソ）、speedScale=1.2
 
 ## 引数ありの場合（`/zundamon テキスト`）
 
@@ -33,7 +33,7 @@ description: ずんだもんに読み上げさせる
 ```bash
 TEXT="ここにテキストを入れる"
 SPEAKER=3      # 通常: 3（ノーマル）/ ネガティブ: 38（ヒソヒソ）
-SPEED=1.3      # 通常: 1.3 / ネガティブ: 1.0
+SPEED=1.3      # 通常: 1.3 / ネガティブ: 1.2
 VOICEVOX_URL="http://localhost:50021"
 
 play_audio() {
