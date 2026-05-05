@@ -35,7 +35,7 @@ play_audio() {
     afplay -v 0.5 "$file"
   elif grep -qi microsoft /proc/version 2>/dev/null; then
     local winfile="/mnt/c/Windows/Temp/zundamon.wav"
-    cp "$file" "$winfile"
+    \cp -f "$file" "$winfile"
     powershell.exe -c "(New-Object Media.SoundPlayer 'C:\Windows\Temp\zundamon.wav').PlaySync()" 2>/dev/null
   else
     pkill ffplay 2>/dev/null
